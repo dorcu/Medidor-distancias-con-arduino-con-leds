@@ -26,18 +26,22 @@ void setup() {
 
 void loop() {
   int distancia;
-  
+
   distancia = ultrasonido.Ranging(CM);
-  
-  if (distancia < dis){
+
+  if (distancia &lt; dis){
     digitalWrite(led,LOW);
     digitalWrite(led2,HIGH);
-    Serial.print("Encender LED rojo ")+Serial.println(ultrasonido.Ranging(CM));
+    Serial.print("Led rojo - Distancia: ");
+    Serial.print(ultrasonido.Ranging(CM)); 
+    Serial.println(" cm");
   } else {
     digitalWrite(led,HIGH);
     digitalWrite(led2,LOW);
-    Serial.print("Encender LED verde ")+Serial.println(ultrasonido.Ranging(CM));
+    Serial.print("Led verde - Distancia: ");
+    Serial.print(ultrasonido.Ranging(CM)); 
+    Serial.println(" cm");
   }
-  
+
   delay(500);
 }
