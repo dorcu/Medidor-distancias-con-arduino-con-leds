@@ -1,7 +1,7 @@
 // Sensor de ultrasonidos HR-SC04 con leds
 // David Ortega Cuadrado - dorcu.com
 // 6 de Abril de 2014
-// hola@dorcu.com
+// dorcu.com
 
 // Definimos los pines que vamos a usar
 #define trigPin 7
